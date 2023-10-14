@@ -606,7 +606,7 @@ gap: 24px;
   background-color: transparent;
 font-size: 12px;
 font-weight: 400;
-line-height: 2;
+line-height: 1.5; 
 letter-spacing: 0.04em;
 
 border: none;
@@ -617,7 +617,8 @@ width: 264px;
 height: 40px;
 border-radius: 4px;
 border: 1px solid #FFF;
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+/*box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);*/
 
 transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -631,6 +632,9 @@ transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 border: 1px solid #4D5AE5;
 }
 
+.footer-form-icons {
+  margin-left: 16px; 
+}
 
 .footer-form-btn {
   color: #FFF;
@@ -643,9 +647,7 @@ border: 1px solid #4D5AE5;
 
   display: inline-flex;
 padding: 8px 24px;
-justify-content: center;
-align-items: center;
-gap: 16px;
+
   margin: 0 auto;
   min-width: 165px;
 
@@ -719,9 +721,7 @@ position: absolute;
   right: 24px;
   top: 24px;
 
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-btn:hover,
@@ -879,14 +879,14 @@ height: 16px;
 }
 
 .form-span {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
 margin-right: 8px;
-
-fill: transparent;
 width: 16px;
 height: 16px;
+
+fill: transparent;
 border-radius: 2px;
 border: 1px solid rgba(46, 47, 66, 0.40);
 
@@ -905,7 +905,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
   padding: 16px 32px;
   margin: 0 auto;
-  width: 169px;
+  min-width: 169px;
   border: none;
   border-radius: 4px;
 background-color: #4D5AE5;
