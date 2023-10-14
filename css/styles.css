@@ -598,7 +598,7 @@ color: #FFF;
   display: flex;
 
   padding: 0;
-
+gap: 24px;
 }
 
 .footer-form-input {
@@ -608,7 +608,6 @@ font-size: 12px;
 font-weight: 400;
 line-height: 2;
 letter-spacing: 0.04em;
-margin-right: 24px;
 
 border: none;
 outline: none;
