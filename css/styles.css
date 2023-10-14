@@ -862,20 +862,15 @@ letter-spacing: 0.04em;
   text-decoration-line: underline;
 
   margin-bottom: 24px;
-
-  padding: 0;
- 
 }
 
 .label-check {
   color: #8E8F99;
 font-size: 12px;
 font-weight: 400;
-line-height: 1.17;
+line-height: 1.33;
 letter-spacing: 0.04em;
 text-decoration-line: underline;
-
-display: inline-flex;
 
 width: 338px;
 height: 16px;
