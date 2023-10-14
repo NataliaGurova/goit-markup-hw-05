@@ -580,30 +580,25 @@ address {
 
 /*=======Subscribe=====*/
 .subscribe { 
+
 }
 
-.footer-form {
-  display: flex;
-  align-items: flex-end;
-  padding: 0;
-}
 
-.footer-form-item {
-  display: flex;
-  flex-direction: column;
-  margin-right: 24px;
-
-
-  color: #FFF;
-}
-
-.footer-form-label {
+.footer-form-text {
   margin-bottom: 16px; 
 
   font-size: 16px;
 font-weight: 500;
 line-height: 1.5;
 letter-spacing: 0.02em;
+color: #FFF;
+}
+
+.footer-form {
+  display: flex;
+
+  padding: 0;
+
 }
 
 .footer-form-input {
@@ -613,14 +608,14 @@ font-size: 12px;
 font-weight: 400;
 line-height: 2;
 letter-spacing: 0.04em;
+margin-right: 24px;
 
 border: none;
 outline: none;
-padding: 8px 212px 8px 16px;
+padding-left: 16px;
 
 width: 264px;
 height: 40px;
-flex-shrink: 0;
 border-radius: 4px;
 border: 1px solid #FFF;
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -677,6 +672,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.40);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 /*========Is Open=========*/
   opacity: 0; 
@@ -699,6 +695,8 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   min-height: 584px;
   border-radius: 4px;
   background-color: #FCFCFC;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 
 position: absolute;
   top: 50%;
@@ -710,6 +708,7 @@ position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0; 
 
   width: 24px;
   height: 24px;
@@ -721,7 +720,7 @@ position: absolute;
   right: 24px;
   top: 24px;
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 }
@@ -730,9 +729,12 @@ position: absolute;
 .form-btn:focus {
   background-color: #404BBF;
   fill: white;
+  border: none;
 }
 
-
+.close-icons {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .form-text {
   color: #2E2F42;
